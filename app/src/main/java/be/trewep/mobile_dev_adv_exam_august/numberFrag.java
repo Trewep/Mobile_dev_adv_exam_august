@@ -201,14 +201,14 @@ public class numberFrag extends Fragment {
                 targetNum = randomNum;
                 tv.setText(String.format(Locale.ENGLISH, "Number to reach: %d", targetNum));
                 startTimer(requireView());
-                //solve(numberArray, randomNum);
+                solve(numberArray, randomNum);
                 btn_High.setVisibility(View.INVISIBLE);
                 btn_Low.setVisibility(View.INVISIBLE);
             }
         });
 
         // update the progressbar sync with timer
-        pb.setMax((gameViewModel.timerDuration / 1000)-1);
+        pb.setMax((gameViewModel.timerDuration / 1000)-1); // ms to s
         number.observe(requireActivity() , pb::setProgress);
         return v;
     }

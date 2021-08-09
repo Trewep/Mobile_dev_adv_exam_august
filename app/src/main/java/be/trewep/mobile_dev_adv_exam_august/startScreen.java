@@ -60,10 +60,10 @@ public class startScreen extends Fragment {
             gamestate_viewmodel.name_Player_2 = et_player2.getText().toString();
 
             if(et_player1.getText().toString().equals("")){
-                gamestate_viewmodel.name_Player_1 = "John Doe";
+                gamestate_viewmodel.name_Player_1 = "Joris";
             }
             if(et_player2.getText().toString().equals("")){
-                gamestate_viewmodel.name_Player_2 = "Jane Doe";
+                gamestate_viewmodel.name_Player_2 = "Koen";
             }
 
             gamestate_viewmodel.gameStarted.setValue(true);

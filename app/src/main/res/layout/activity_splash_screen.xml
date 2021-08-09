@@ -3,7 +3,7 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:background="#bdd7ed" >
+android:background="@color/own" >
 tools:context=".splashScreen">
 
 <ImageView
