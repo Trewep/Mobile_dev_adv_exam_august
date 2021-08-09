@@ -1,2 +1,3 @@
+include ':ZakiSolver'
 include ':app'
 rootProject.name = "Mobile_dev_adv_exam_august"
